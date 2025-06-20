@@ -58,7 +58,7 @@ itens.forEach((item, index)=>{
 //Codifica a mensagem para URL
 const mensagemCodificada = encodeURIComponent(mensagem);
     
-// Número do WhatsApp com DDD (ex: 5592984158278)
+// Número do WhatsApp com DDD (ex: 5592900000000)
 const numero = "5592900000000";
 const url = `https://wa.me/${numero}?text=${mensagemCodificada}`;
 
