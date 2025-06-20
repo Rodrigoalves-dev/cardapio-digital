@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+
+<body>
+    <header>
+        <h1>🧑🏼‍🍳Restaurante Sabor da Casa</h1>
+        <p>Cozinha do Chef, Sabor e Qualidade Todos os Dias!</p>
+        <hr>
+    </header>
+    
+    <section>
+        <h2>Entradas</h2>
+
+        <div class="item">
+            <span>Coxinhas - R$ 10,00</span>
+            <button onclick="adicionarAoCarrinho('Coxinhas - R$ 10,00')">Pedir</button>
+        </div>
+
+        <div class="item">
+            <span>Batata Frita - R$ 15,00</span>
+            <button onclick="adicionarAoCarrinho('Batata Frita - R$ 15,00')">Pedir</button>
+        </div>
+        
+        <div  class="item">
+            <span>Caldo de Feijão - R$ 20,00</span>
+            <button onclick="adicionarAoCarrinho('Caldo de Feijão - R$ 20,00')">Pedir</button>
+        </div>
+
+        <div class="item">
+            <span>Camarão Empanado - R$ 25,00</span>
+            <button onclick="adicionarAoCarrinho('Camarão Empanado - R$ 25,00')">Pedir</button>
+        </div>
+
+    </section>
+
+    <section>
+        <h2>Pratos Principais</h2>
+
+        <div class="item">
+            <span>Frango Grelhado - R$ 20,00</span>
+            <button onclick="adicionarAoCarrinho('Frango Grelhado - R$ 20,00')">Pedir</button>
+        </div>
+        
+        <div class="item">
+            <span>Frango à Parmegiana - R$ 25,00</span>
+            <button onclick="adicionarAoCarrinho('Frango à Parmegiana - R$ 25,00')">Pedir</button>
+        </div>
+
+        <div class="item"> 
+            <span>Churrasquinho Misto - R$ 25,00</span>
+            <button onclick="adicionarAoCarrinho('Churrasquinho Misto - R$ 25,00')">Pedir</button>
+        </div>
+        
+        <div class="item">
+            <span>Tambaqui Assado (banda) - R$ 90,00</span>
+            <button onclick="adicionarAoCarrinho('Tambaqui Assado (banda) - R$ 90,00')">Pedir</button>
+        </div>
+
+    </section>
+
+    <section>
+        <h2>Bebidas</h2>
+        <div class="item">
+            <span>Água s/gás - R$ 2,50</span>
+            <button onclick="adicionarAoCarrinho('Água s/gás - R$ 2,50')">Pedir</button>
+        </div>
+
+        <div class="item">
+            <span>Água c/gás - R$ 3,50</span>
+            <button onclick="adicionarAoCarrinho('Água c/gás - R$ 3,50')">Pedir</button>
+        </div>
+        
+        <div class="item">
+            <span>Refrigerante - R$ 8,00</span>
+            <button onclick="adicionarAoCarrinho('Refrigerante - R$ 8,00')">Pedir</button>
+        </div>
+
+        <div class="item">
+            <span>Suco Natural - R$ 10,00</span>
+            <button onclick="adicionarAoCarrinho('Suco Natural - R$ 10,00')">Pedir</button>
+        </div>
+
+    </section>
+
+    <section>
+        <h2>Sobremesas</h2>
+        <div class="item">
+            <span>Pudim - R$ 5,00</span>
+            <button onclick="adicionarAoCarrinho('Pudim - R$ 5,00')">Pedir</button>
+        </div>
+
+        <div class="item">
+            <span>Sorvete - R$ 8,00</span>
+            <button onclick="adicionarAoCarrinho('Sorvete - R$ 8,00')">Pedir</button>
+        </div>
+
+        <div class="item">
+            <span>Torta de Limão - R$ 10,00</span>
+            <button onclick="adicionarAoCarrinho('Torta de Limão - R$ 10,00')">Pedir</button>
+        </div>
+
+        <div class="item">
+            <span>Mousse de Maracujá - R$ 10,00</span>
+            <button onclick="adicionarAoCarrinho('Mousse de Maracujá - R$ 10,00')">Pedir</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <hr>
+        <p>📍 Rua Estrela Azul, 31 - Manaus, AM</p>
+        <p>📞 (92) 98415-8278</p>
+        <p><a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+    </footer>
+
+    <!--Carrinho-->
+    <section id="carrinho">
+        <h2>Carrinho</h2>
+        <ul id="lista-carrinho"></ul>
+        <p><strong>Total:</strong> R$ <span id="total">0.00</span></p>
+        <button id="btn-finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+/* === RESET & BASE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fffaf5;
+    color: #333;
+}
+
+/* === CONTAINER === */
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* === TÍTULOS === */
+h1, h2 {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+h2 {
+    margin-top: 40px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* === CABEÇALHO E RODAPÉ === */
+header {
+    background-color: rgba(255, 0, 0, 0.697);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.53);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* === ITENS DO CARDÁPIO === */
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fefefe;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.05);
+    max-width: 100%;
+}
+
+/* === CARRINHO === */
+#carrinho {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+    max-width: 100%;
+}
+#lista-carrinho {
+    list-style-type: none;
+    padding-left: 0;
+}
+.item-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px 0;
+}
+
+/* === BOTÕES GERAIS === */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+button:hover {
+    background-color: #218838;
+}
+
+/* === BOTÃO DE REMOVER === */
+.remover {
+    background-color: #dc3545;
+    margin-left: 10px;
+}
+.remover:hover {
+    background-color: #c82333;
+}
+
+/* === BOTÃO DE FINALIZAR COMPRA === */
+#btn-finalizar {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#btn-finalizar:hover {
+    background-color: #0056b3;
+}
+
+/* === RESPONSIVO === */
+@media (max-width: 600px) {
+    .item, .item-carrinho {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item span, .item button,
+    .item-carrinho span, .item-carrinho button {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
